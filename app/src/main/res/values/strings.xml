@@ -2,4 +2,12 @@
     <string name="app_name">Examen2023</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="extremidades_a_tope">Extremidades a tope</string>
+    <string name="_5_flexiones_en_el_suelo">5 flexiones en el suelo</string>
+    <string name="_10_inclinaciones_de_una_cama">10 inclinaciones de una cama</string>
+    <string name="_15_flexiones_dorsales">15 Flexiones dorsales</string>
+    <string name="agonia_m_xima">Agonia Máxima</string>
+    <string name="_12_burpees_extremos">12 Burpees extremos</string>
+    <string name="_14_sprints_cronometrados">14 Sprints cronometrados</string>
+    <string name="_2_circuito_hiit">2 Circuito HIIT</string>
 </resources>

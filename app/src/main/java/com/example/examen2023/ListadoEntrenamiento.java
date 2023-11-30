@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -14,12 +15,11 @@ import androidx.fragment.app.Fragment;
 public class ListadoEntrenamiento extends Fragment {
 
     public ListadoEntrenamiento() {
-        // Constructor por defecto requerido
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflar el diseño del fragmento
+
         View view = inflater.inflate(R.layout.fragment_listado_entrenamientos, container, false);
         return view;
     }
@@ -36,5 +36,13 @@ public class ListadoEntrenamiento extends Fragment {
                 android.R.layout.simple_list_item_1, datos);
 
         myListView.setAdapter(adapter);
+
+        myListView.setOnItemClickListener((parent, view1, position, id) -> {
+
+            String selectedExercise = datos[position];
+
+                ((MainActivity) getActivity()).openDetalleFragment(selectedExercise);
+
+        });
     }
 }

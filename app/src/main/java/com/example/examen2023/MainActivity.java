@@ -19,4 +19,16 @@ public class MainActivity extends AppCompatActivity {
                 .add(R.id.fragment_container, listadoEntrenamiento)
                 .commit();
     }
+    public void openDetalleFragment(String exerciseName) {
+        DetalleEntrenamiento detalleFragment = new DetalleEntrenamiento();
+
+        Bundle bundle = new Bundle();
+        bundle.putString("exerciseName", exerciseName);
+
+        detalleFragment.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, detalleFragment)
+                .addToBackStack(null)
+                .commit();
+    }
 }
