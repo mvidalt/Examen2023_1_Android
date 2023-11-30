@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.util.Objects;
+
 public class ListadoEntrenamiento extends Fragment {
 
     public ListadoEntrenamiento() {
@@ -29,20 +31,18 @@ public class ListadoEntrenamiento extends Fragment {
 
         ListView myListView = view.findViewById(R.id.myListView);
 
-
         String[] datos = {"Extremidades a tope", "Agonia Maxima", "Entrenamiento Especial", "Fuerza y longitud"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(),
-                android.R.layout.simple_list_item_1, datos);
+
+        CustomListAdapter adapter = new CustomListAdapter(requireContext(), datos);
 
         myListView.setAdapter(adapter);
 
         myListView.setOnItemClickListener((parent, view1, position, id) -> {
-
             String selectedExercise = datos[position];
-
-                ((MainActivity) getActivity()).openDetalleFragment(selectedExercise);
-
+            ((MainActivity) requireActivity()).openDetalleFragment(selectedExercise);
         });
     }
+
+
 }

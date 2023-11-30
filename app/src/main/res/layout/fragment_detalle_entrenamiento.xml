@@ -45,6 +45,11 @@
             android:textSize="18sp"
             android:padding="8dp"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ejercicio_1_foreground"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -84,6 +89,11 @@
             android:text="@string/_2_circuito_hiit"
             android:textSize="18sp"
             android:padding="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ejercicio_2_foreground"/>
 
     </LinearLayout>
 
@@ -125,6 +135,11 @@
             android:textSize="18sp"
             android:padding="8dp"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ejercicio_3_foreground"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -164,6 +179,11 @@
             android:text="Peso muerto con salto"
             android:textSize="18sp"
             android:padding="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ejercicio_4_foreground"/>
 
     </LinearLayout>
 
